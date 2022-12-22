@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Betaservis</title>
+</head>
+<body>
+
+privet
+
+<h2>Меню</h2>
+<table>
+<tr>  <td>{{ betaservis.main }}</td></tr>
+{% for betaservis in beta %}
+<tr>
+
+<td>{{ betaservis.main }}</td>
+<td>{{ betaservis.services }}</td>
+    <td>{{ betaservis.works }}</td>
+    <td>{{ betaservis.forms }}</td>
+<td><a href="edit/{{services.id}}">Изменить</a> | <a href="delete/{{services.id}}">Удалить</a></td>
+</tr>
+{% endfor %}
+</table>
+
+
+</body>
+</html>
