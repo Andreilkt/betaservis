@@ -19,6 +19,8 @@ from beta import views
 
 urlpatterns = [
     path("", views.index),
+    path('text/', views.text),
+
     path('admin/', admin.site.urls),
 
 

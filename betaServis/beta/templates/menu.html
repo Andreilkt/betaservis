@@ -6,22 +6,19 @@
 </head>
 <body>
 
-privet
+
 
 <h2>Меню</h2>
 <table>
 
-{% for betaservistext in beta_text %}
+{% for betaservis in beta %}
 <tr>
 
-
-    <td>{{ betaservistext.main_text }}</td>
-
-<td>{{ betaservistext.services_text }}</td>
-    <td>{{ betaservistext.works_text }}</td>
-    <td>{{ betaservistext.forms_text }}</td>
-    <td>&nbsp;</td>
-
+<td>{{ betaservis.main }}</td>
+   <td>{{ betaservis.services }}</td>
+    <td>{{ betaservis.works }}</td>
+    <td>{{ betaservis.forms }}</td>
+    </tr><tr>
 <td><a href="edit/{{services.id}}">Изменить</a> | <a href="delete/{{services.id}}">Удалить</a></td>
 </tr>
 {% endfor %}
