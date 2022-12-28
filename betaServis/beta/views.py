@@ -11,7 +11,16 @@ def index(request):
     #betatext = BetaservisText.object.all()
     return render(request, "menu.html", {"beta": beta })
 
+def main (request):
 
+    # если запрос POST, сохраняем данные
+    if request.method == "POST":
+        #BetaservisText = BetaservisText()
+        BetaservisText.main_text  = request.POST.get("main_text")
+
+    # передаем данные в шаблон
+    main_text  = BetaservisText.objects.all()
+    return render(request, "main.html", {"main_text": main_text })
 def services(request):
 
     # если запрос POST, сохраняем данные

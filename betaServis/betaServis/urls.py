@@ -19,6 +19,7 @@ from beta import views
 
 urlpatterns = [
     path("", views.index),
+    path('main/', views.main),
     path('services/', views.services),
     path('works/', views.works),
     path('forms/', views.forms),
