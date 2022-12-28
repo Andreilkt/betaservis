@@ -11,6 +11,12 @@ def index(request):
     #betatext = BetaservisText.object.all()
     return render(request, "menu.html", {"beta": beta })
 
+def indexx(request):
+    betas = Betaservis.objects.all()
+    #betatext = BetaservisText.object.all()
+    return render(request, "index.html", {"betas": betas })
+
+
 def main (request):
 
     # если запрос POST, сохраняем данные
