@@ -21,6 +21,7 @@ urlpatterns = [
     path("", views.index),
     path('services/', views.services),
     path('works/', views.works),
+    path('forms/', views.forms),
 
     path('admin/', admin.site.urls),
 

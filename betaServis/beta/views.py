@@ -28,8 +28,19 @@ def works  (request):
     # если запрос POST, сохраняем данные
     if request.method == "POST":
         #BetaservisText = BetaservisText()
-        Betaservis.works  = request.POST.get("works")
+        BetaservisText.works_text  = request.POST.get("works_text")
 
     # передаем данные в шаблон
-    works  = Betaservis.objects.all()
-    return render(request, "works.html", {"works": works })
+    works_text  = BetaservisText.objects.all()
+    return render(request, "works.html", {"works_text": works_text })
+
+def forms  (request):
+
+    # если запрос POST, сохраняем данные
+    if request.method == "POST":
+        #BetaservisText = BetaservisText()
+        BetaservisText.forms_text  = request.POST.get("forms_text")
+
+    # передаем данные в шаблон
+    forms_text  = BetaservisText.objects.all()
+    return render(request, "forms.html", {"forms_text": forms_text })

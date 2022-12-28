@@ -11,14 +11,13 @@
 <h2>Меню</h2>
 <table>
 
-{% for betaservis in works %}
+{% for betaservistext in works_text %}
 <tr>
 
 
-   <td>{{ betaservis.services }}</td>
+   <td>{{ betaservistext.works_text }}</td>
 
-    <td>{{ betaservis.forms }}</td>
-    </tr><tr>
+        </tr><tr>
 <td><a href="services/{{services.id}}">{{ betaservis.services }}</a></td>
 </tr>
 {% endfor %}
