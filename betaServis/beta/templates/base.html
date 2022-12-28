@@ -15,23 +15,18 @@
 <h2>Меню</h2>
 
 <div class="row">
-    {% block content %}
+
 
 <table>
 
 
 <tr>
-    {% for betaservis in beta %}
-    </tr><tr>
-    <td><a href="main/{{main.id}}">{{ betaservis.main }}</a></td>
-    <td><a href="services/{{services.id}}">{{ betaservis.services }}</a></td>
-    <td><a href="works/{{works.id}}">{{ betaservis.works }}</a></td>
-    <td><a href="forms/{{forms.id}}">{{ betaservis.forms }}</a></td>
-{% endfor %}
+<td>  {% block content %}
+      {% endblock %} </td>
 </tr>
 
 </table>
-     {% endblock %}
+
 </div>
 
 </body>

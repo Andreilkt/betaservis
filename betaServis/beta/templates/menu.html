@@ -1,26 +1,5 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Betaservis</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-
-
-
-<h2>Меню</h2>
-
-<div class="row">
-    {% block content %}
-
-<table>
-
-
-<tr>
+{% extends 'base.html' %}
+{% block content %}
 {% for betaservis in beta %}
     </tr><tr>
     <td><a href="main/{{main.id}}">{{ betaservis.main }}</a></td>
@@ -28,11 +7,4 @@
     <td><a href="works/{{works.id}}">{{ betaservis.works }}</a></td>
     <td><a href="forms/{{forms.id}}">{{ betaservis.forms }}</a></td>
 {% endfor %}
-</tr>
-
-</table>
-     {% endblock %}
-</div>
-
-</body>
-</html>
+{% endblock %}
