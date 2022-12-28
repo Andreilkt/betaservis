@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<table>
+
+{% for betaservistext in services %}
+        <tr>
+            <td>{{ betaservistext.services_text }}</td>
+
+            <td>
+<td>{{ betaservis.works }}</td>
+            </td>
+        </tr>
+{% endfor %}
+    </table>
+<a href="index/{{betaservistext.id}}">На главную</a>
+</body>
+</html>

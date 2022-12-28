@@ -11,7 +11,25 @@ def index(request):
     #betatext = BetaservisText.object.all()
     return render(request, "menu.html", {"beta": beta })
 
-def text(requests):
-    beta_text = BetaservisText.object.all()
-    return render(requests, "index.html", {"beta_text": beta_text })
-# Create your views here.
+
+def services(request):
+
+    # если запрос POST, сохраняем данные
+    if request.method == "POST":
+        #BetaservisText = BetaservisText()
+        BetaservisText.services_text = request.POST.get("services_text")
+
+    # передаем данные в шаблон
+    betaservist = BetaservisText.objects.all()
+    return render(request, "services.html", {"betaservist": betaservist})
+
+def works  (request):
+
+    # если запрос POST, сохраняем данные
+    if request.method == "POST":
+        #BetaservisText = BetaservisText()
+        Betaservis.works  = request.POST.get("works")
+
+    # передаем данные в шаблон
+    works  = Betaservis.objects.all()
+    return render(request, "works.html", {"works": works })
