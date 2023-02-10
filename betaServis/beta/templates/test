@@ -1,7 +1,3 @@
-{% extends 'base.html' %}
-{% block content %}
-
-
 {% for betaservistext in betaservist %}
 <table>
     <tr>
@@ -12,4 +8,3 @@
     </tr>
 </table>
 {% endfor %}
-{% endblock %}

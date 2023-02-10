@@ -1,13 +1,6 @@
 {% extends 'base.html' %}
-{% block content %}
-{% for betaservis in beta %}
-<table border = 1 style = "cellpadding: 5; cellspacing:5 ">
-<tr align = center>
-    <td width = "100"><a href="main/{{main.id}}">{{ betaservis.main }}</a></td>
-    <td width = "100"><a href="services/{{services.id}}">{{ betaservis.services }}</a></td>
-    <td width = "100"><a href="works/{{works.id}}">{{ betaservis.works }}</a></td>
-    <td width = "100"><a href="forms/{{forms.id}}">{{ betaservis.forms }}</a></td>
-</tr>
-    </table>
-{% endfor %}
+{% block menu %}
+
+
+
 {% endblock %}

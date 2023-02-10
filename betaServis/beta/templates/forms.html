@@ -1,14 +1,7 @@
 
 <!DOCTYPE html>
+{% extends "base.html" %}
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-{% extends "menu.html" %}
-<table>
 
 {% for betaservistext in forms_text %}
         <tr>
@@ -17,7 +10,3 @@
 
         </tr>
 {% endfor %}
-    </table>
-<a href="index/{{beta.id}}">На главную</a>
-</body>
-</html>

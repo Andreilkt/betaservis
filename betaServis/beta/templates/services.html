@@ -1,29 +1,16 @@
-{% extends "menu.html" %}
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-
-</head>
-<body>
-
-<table><tr> <td>
-    {% block content %}
-    {% endblock %} </td>
-
-    </td></tr>
+{% extends 'base.html' %}
+{% block content %}
 
 {% for betaservistext in betaservist %}
-        <tr>
-            <td>{{ betaservistext.services_text }}</td>
+<table>
+    <tr>
+        <td>
+    {{ betaservistext.services_text }}
 
-
-        </tr>
+        </td>
+    </tr>
+</table>
 {% endfor %}
-    </table>
-<a href="index/{{beta.id}}">На главную</a>
-</body>
-</html>
+
+
+{% endblock %}

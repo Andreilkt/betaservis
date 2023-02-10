@@ -6,19 +6,32 @@
     <title>Betaservis</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
+{%block content%}
+<div>
+<h2>BETASERVIS</h2>
+{% for betaservis in beta %}
+<table border = 1 style = "cellpadding: 5; cellspacing:5 ">
 
+<tr align = center>
 
+    <td width = "100"><a href="main/{{main.id}}">{{ betaservis.main }}</a></td>
+    <td width = "100"><a href="services/{{services.id}}">{{ betaservis.services }}</a></td>
+    <td width = "100"><a href="works/{{works.id}}">{{ betaservis.works }}</a></td>
+    <td width = "100"><a href="forms/{{forms.id}}">{{ betaservis.forms }}</a></td>
 
-<h2>Меню</h2>
+</tr>
 
-<div class="row">
-
-{% block content %}
-
+    </table>
+{% endfor %}
+</div>
 {% endblock %}
+<div>
+
+
+
 </div>
 
 </body>

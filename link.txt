@@ -1,0 +1,25 @@
+source betaservis/venv/bin/activate
+https://dclimber.com/ru/posts/django-templates/ шаблоны бутстрап
+
+d6be487ca57969046b0444a1a7ca7a8f7160
+pa_autoconfigure_django.py https://github.com/Andreilkt/beta.git
+
+
+https://proproprogs.ru/django/zavershaem-razvertyvanie-django-sayta-na-hostinge django выкладка на сервер
+
+pip install --andrey pythonanywhere
+
+
+
+https://pythonru.com/uroki/7-osnovy-shablonizatora-jinja jinja
+
+https://pythonru.com/uroki/7-osnovy-shablonizatora-jinja тут же и фласк
+https://dvmn.org/encyclopedia/django-migrations/data-migrations/?ysclid=lbnduzl7ek823012516 про дата миграции
+https://metanit.com/python/django/3.2.php  про джанго без штатной админки
+
+https://eternalhost.net/blog/perevody/django-admin-panel#p2 джанго админка
+
+https://tutorial.djangogirls.org/ru/django_start_project/
+
+
+https://dvmn.org/encyclopedia/django-migrations/migration_null_constraint/?ysclid=lbnbkgrqp3408006359 тип ячейки по умолчанию
