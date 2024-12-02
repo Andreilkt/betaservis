@@ -10,7 +10,7 @@ from .models import Betaservis, BetaservisText
 def index(request):
     beta = Betaservis.objects.all()
     # betatext = BetaservisText.object.all()
-    return render(request, "menu.html", {"beta": beta})
+    return render(request, "index.html", {"beta": beta})
 
 
 def indexx(request):
