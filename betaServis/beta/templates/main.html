@@ -1,21 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-<table>
+{% extends 'base.html' %}
+{% block content %}
 
 {% for betaservistext in main_text %}
-        <tr>
-            <td>{{ betaservistext.main_text }}</td>
+<table>
+    <tr>
+        <td>
+    {{ betaservistext.main_text }}
 
-
-        </tr>
+        </td>
+    </tr>
+</table>
 {% endfor %}
-    </table>
-<a href="index/{{beta.id}}">На главную</a>
-</body>
-</html>
+
+
+{% endblock %}

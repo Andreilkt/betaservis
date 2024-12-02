@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-{%block content%}
+
 <div>
 <h2>BETASERVIS</h2>
 {% for betaservis in beta %}
@@ -22,7 +22,7 @@
     <td width = "140"><a href="works/{{works.id}}">{{ betaservis.works }}</a></td>
     <td width = "140"><a href="forms/{{forms.id}}">{{ betaservis.forms }}</a></td>
     <td width = "140"><a href="contacts/{{contacts.id}}">{{ betaservis.contacts }}</a></td>
-    <td width = "140"><a href="site/{{contacts.id}}">{{ betaservis.site }}</a></td>
+    <td width = "140"><a href="site/{{site.id}}">{{ betaservis.site }}</a></td>
     <td width = "140"><a href="our_friends/{{our_friends.id}}">{{ betaservis.our_friends }}</a></td>
 
 </tr>
@@ -30,11 +30,13 @@
     </table>
 {% endfor %}
 </div>
-{% endblock %}
+
 <div>
 
 
+{%block content%}
 
+    {% endblock %}
 </div>
 
 </body>

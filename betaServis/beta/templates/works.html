@@ -1,28 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Betaservis</title>
-</head>
-<body>
-
-
-
-<h2>Меню</h2>
-<table>
+{% extends 'base.html' %}
+{% block content %}
 
 {% for betaservistext in works_text %}
-<tr>
+<table>
+    <tr>
+        <td>
+    {{ betaservistext.works_text }}
 
-
-   <td>{{ betaservistext.works_text }}</td>
-
-        </tr><tr>
-<td><a href="services/{{services.id}}">{{ betaservis.services }}</a></td>
-</tr>
-{% endfor %}
+        </td>
+    </tr>
 </table>
+{% endfor %}
 
 
-</body>
-</html>
+{% endblock %}

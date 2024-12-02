@@ -37,8 +37,8 @@ def services(request):
         BetaservisText.services_text = request.POST.get("services_text")
 
     # передаем данные в шаблон
-    betaservist = BetaservisText.objects.all()
-    return render(request, "services.html", {"betaservist": betaservist})
+    services_text = BetaservisText.objects.all()
+    return render(request, "services.html", {"services_text": services_text})
 
 
 def works(request):
@@ -85,9 +85,15 @@ def site(request):
     return render(request, "site.html", {"site_text": site_text})
 
 
+
 def our_friends(request):
-    if requests.method == "POST":
+    # если запрос POST, сохраняем данные
+    if request.method == "POST":
+        # BetaservisText = BetaservisText()
         BetaservisText.our_friends_text = request.POST.get("our_friends_text")
 
+    # передаем данные в шаблон
     our_friends_text = BetaservisText.objects.all()
-    return render(request, "our_friends.html", {"our_friends_text": our_friends_text})
+    return render(request, "site.html", {"our_friends_text": our_friends_text})
+
+

@@ -1,12 +1,17 @@
 
-<!DOCTYPE html>
-{% extends "base.html" %}
-
+{% extends 'base.html' %}
+{% block content %}
 
 {% for betaservistext in forms_text %}
-        <tr>
-            <td>{{ betaservistext.forms_text }}</td>
+<table>
+    <tr>
+        <td>
+    {{ betaservistext.forms_text }}
 
-
-        </tr>
+        </td>
+    </tr>
+</table>
 {% endfor %}
+
+
+{% endblock %}
