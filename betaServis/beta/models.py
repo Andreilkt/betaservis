@@ -11,6 +11,8 @@ class Betaservis(models.Model):
     contacts = models.TextField()
     site = models.TextField()
     outsorcing = models.TextField()
+    our_friends = models.TextField(default='test')
+
 
 
 def __str__(self):
@@ -24,6 +26,7 @@ class BetaservisText(models.Model):
     contacts_text = models.TextField()
     site_text = models.TextField()
     outsorcing_text = models.TextField()
+    our_friends_text = models.TextField(default='test')
     Betaservis = models.OneToOneField(Betaservis, on_delete=models.CASCADE, primary_key=True)
 
 def __str__(self):

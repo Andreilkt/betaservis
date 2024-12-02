@@ -59,3 +59,12 @@ def forms  (request):
     # передаем данные в шаблон
     forms_text  = BetaservisText.objects.all()
     return render(request, "forms.html", {"forms_text": forms_text })
+
+def our_friends(request):
+    if requests.method == "POST":
+        Betaservis.our_friends = request.POST.get("our_friends")
+
+    our_friends = Betaservis.objects.all()
+    return render(request, "our_friends.html", {"our_friends": our_friends})
+
+
