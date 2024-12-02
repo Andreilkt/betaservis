@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-</body>
-</html>
+
+{% for betaservistext in our_friends_text %}
+        <tr>
+            <td>{{ betaservistext.our_friends_text }}</td>
+
+
+        </tr>
+{% endfor %}

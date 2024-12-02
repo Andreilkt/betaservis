@@ -24,6 +24,9 @@ urlpatterns = [
     path('services/', views.services),
     path('works/', views.works),
     path('forms/', views.forms),
+    path('contacts/', views.contacts),
+    path('site/', views.site),
+    path('our_friends/', views.our_friends),
 
     path('admin/', admin.site.urls),
 

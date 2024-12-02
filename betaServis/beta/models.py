@@ -16,7 +16,7 @@ class Betaservis(models.Model):
 
 
 def __str__(self):
-    return f"{self.main}, {self.services}, {self.works}, {self.forms}, {self.contacts}, {self.site}, {self.outsorcing}"
+    return f"{self.main}, {self.services}, {self.works}, {self.forms}, {self.contacts}, {self.site}, {self.outsorcing} , {self.our_friends}"
 
 class BetaservisText(models.Model):
     main_text = models.TextField()
@@ -30,6 +30,6 @@ class BetaservisText(models.Model):
     Betaservis = models.OneToOneField(Betaservis, on_delete=models.CASCADE, primary_key=True)
 
 def __str__(self):
-    return f"{self.main_text}, {self.services_text}, {self.works_text}, {self.forms_text}, {self.contacts_text}, {self.site_text}, {self.outsorcing_text}"
+    return f"{self.main_text}, {self.services_text}, {self.works_text}, {self.forms_text}, {self.contacts_text}, {self.site_text}, {self.outsorcing_text}, {self.our_friends_text}"
 
 # Create your models here.

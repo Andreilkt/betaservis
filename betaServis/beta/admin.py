@@ -7,11 +7,11 @@ from beta.models import Betaservis, BetaservisText
 
 @admin.register(Betaservis)
 class BetaservisAdmin(admin.ModelAdmin):
-    list_display = ("main", "services", "works", "forms", "contacts", "site", "outsorcing")
+    list_display = ("main", "services", "works", "forms", "contacts", "site", "outsorcing", "our_friends")
 
 @admin.register(BetaservisText)
 class BetaservisTextAdmin(admin.ModelAdmin):
-    list_display = ("main_text", "services_text", "works_text", "forms_text", "contacts_text", "site_text", "outsorcing_text")
+    list_display = ("main_text", "services_text", "works_text", "forms_text", "contacts_text", "site_text", "outsorcing_text", "our_friends_text")
 
 
 # Register your models here.
