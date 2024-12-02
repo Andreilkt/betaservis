@@ -94,6 +94,6 @@ def our_friends(request):
 
     # передаем данные в шаблон
     our_friends_text = BetaservisText.objects.all()
-    return render(request, "site.html", {"our_friends_text": our_friends_text})
+    return render(request, "our_friends.html", {"our_friends_text": our_friends_text})
 
 
