@@ -20,13 +20,13 @@ from beta import views
 urlpatterns = [
     path("", views.index),
     path("indexx", views.indexx),
-    path('main/', views.main),
-    path('services/', views.services),
-    path('works/', views.works),
-    path('forms/', views.forms),
-    path('contacts/', views.contacts),
-    path('site/', views.site),
-    path('our_friends/', views.our_friends),
+    path('main/', views.main, name='main'),
+    path('services/', views.services, name='services'),
+    path('works/', views.works, name='works'),
+    path('forms/', views.forms, name='forms'),
+    path('contacts/', views.contacts, name='contacts'),
+    path('site/', views.site, name='site'),
+    path('our_friends/', views.our_friends, name='our_friends'),
 
     path('admin/', admin.site.urls),
 

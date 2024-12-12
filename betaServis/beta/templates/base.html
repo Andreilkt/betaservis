@@ -17,15 +17,16 @@
 
 <tr align = center>
 
-    <td width = "140"><a href="main/{{main.id}}">{{ betaservis.main }}</a></td>
-    <td width = "140"><a href="services/{{services.id}}">{{ betaservis.services }}</a></td>
-    <td width = "140"><a href="works/{{works.id}}">{{ betaservis.works }}</a></td>
-    <td width = "140"><a href="forms/{{forms.id}}">{{ betaservis.forms }}</a></td>
-    <td width = "140"><a href="contacts/{{contacts.id}}">{{ betaservis.contacts }}</a></td>
-    <td width = "140"><a href="site/{{site.id}}">{{ betaservis.site }}</a></td>
-    <td width = "140"><a href="our_friends/{{our_friends.id}}">{{ betaservis.our_friends }}</a></td>
+    <td width = "140"><a href="{% url 'main' %}">{{ betaservis.main }}</a></td>
+    <td width = "140"><a href="{% url 'services' %}">{{ betaservis.services }}</a></td>
+    <td width = "140"><a href="{% url 'works' %}">{{ betaservis.works }}</a></td>
+    <td width = "140"><a href="{% url 'forms' %}">{{ betaservis.forms }}</a></td>
+    <td width = "140"><a href="{% url 'contacts' %}">{{ betaservis.contacts }}</a></td>
+    <td width = "140"><a href="{% url 'site' %}">{{ betaservis.site }}</a></td>
+    <td width = "140"><a href="{% url 'our_friends' %}">{{ betaservis.our_friends }}</a></td>
 
 </tr>
+
 
     </table>
 {% endfor %}
